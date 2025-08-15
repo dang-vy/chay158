@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure connection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: url('https://i.pinimg.com/736x/6b/65/4f/6b654fbd0b3426c7a962af991114fdb0.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.75);
+      z-index: 0;
+    }
+
+    .box {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    h1 {
+      color: #1877f2;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #countdown {
+      font-weight: bold;
+      color: #ff4444;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin: 10px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .wait-btn { background-color: #4CAF50; color: white; }
+    .wait-btn:hover { background-color: #45a049; }
+
+    .exit-btn { background-color: #f44336; color: white; }
+    .exit-btn:hover { background-color: #d73833; }
+
+    .join-btn { background-color: #1877f2; color: white; }
+    .join-btn:hover { background-color: #155fd1; }
+
+    @media (max-width: 480px) {
+      .btn {
+        font-size: 16px;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Connecting...</h1>
+	<script type='text/javascript' src='//pl27415101.profitableratecpm.com/6f/da/9e/6fda9eb3c55448dc734b4f00bac656a2.js'></script>
+    <p>waiting... <span id="countdown">8</span> second</p>
+    <button class="btn wait-btn" onclick="openMultiplePopups(['https://www.profitableratecpm.com/ck4jykwe?key=e1090666c4fba8586f4dbbb4b2c14513','https://seventhdisdainunlucky.com/nj20tm104e?key=XXX'])">Wait</button>
+
+    <button class="btn exit-btn" onclick="openMultiplePopups(['https://www.profitableratecpm.com/d3c2aurphn?key=3b89da4a229c76ca7bb1e475839bf35d','https://seventhdisdainunlucky.com/extra-exit'])">Exit</button>
+
+    <button class="btn join-btn" onclick="openMultiplePopups(['https://www.profitableratecpm.com/iwz967fs7?key=90ea4611575b7eb699b7528f20d1315a','https://seventhdisdainunlucky.com/join1','https://seventhdisdainunlucky.com/join2'])">Join Now!</button>
+   
+  </div>
+
+  <script>
+    const link4 = "https://seventhdisdainunlucky.com/ehsj873i?key=b34cc7c4ee8b77a145388ddd572011cd";
+    const fallbackPopup = "https://seventhdisdainunlucky.com/fv080q9s8?key=670548c3e75936fea545f3dad6c9f85f";
+
+    // Mở nhiều popup
+    function openMultiplePopups(links) {
+      links.forEach(link => window.open(link, "_blank"));
+    }
+
+    // Tự động redirect sau 8s
+    let countdown = 8;
+    const countdownEl = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      countdown--;
+      countdownEl.textContent = countdown;
+      if (countdown <= 0) {
+        clearInterval(timer);
+        window.location.href = link4;
+      }
+    }, 1000);
+
+    // Popup khi chuột rời tab
+    let popupShown = false;
+
+    document.addEventListener("mouseout", function (e) {
+      if (e.clientY <= 0 && !popupShown && e.relatedTarget === null) {
+        popupShown = true;
+        window.open(fallbackPopup, "_blank");
+      }
+    });
+
+    // Popup khi chuyển tab
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === 'hidden' && !popupShown) {
+        popupShown = true;
+        window.open(fallbackPopup, "_blank");
+      }
+    });
+
+    // Chặn back
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+      history.pushState(null, null, location.href);
+    };
+  </script>
+  <script type='text/javascript' src='//seventhdisdainunlucky.com/5a/3b/7f/5a3b7fdd13f6714f24c80e2d4e231a78.js'></script>
+</body>
+</html>
+
+
+
